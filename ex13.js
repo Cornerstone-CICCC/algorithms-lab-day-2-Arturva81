@@ -2,4 +2,11 @@
 // and returns the sum of all numbers from 1 to `n`.
 // Example: sumRange(5) should return 15 (1 + 2 + 3 + 4 + 5).
 
+const sumRange = num => {
+    if (num === 1) {
+        return 1;
+    };
+    return num + sumRange(num - 1);
+}
+
 console.log(sumRange(5)); // Expected output: 15

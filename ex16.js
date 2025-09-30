@@ -5,5 +5,5 @@
 const numbers = [3, 10, 15, 7, 22, 18]
 
 console.log(
-  numbers
+  numbers.reduce((a, b) => b % 2 === 0 ? a + (b * 2) : a, 0)
 ) // Expected output: 100
